@@ -87,7 +87,21 @@ namespace BDF.CourseWork.BL.Models
 
 		public string AssignSectionNumber(string sectionNumber)
 		{
-			return sectionNumber;
+			try
+			{
+				if(sectionNumber.Length != 5)
+				{
+					throw new Exception("Section Number needs to be 5 characters.");
+				}
+				else
+				{
+					return sectionNumber.ToUpper();
+				}
+			}
+			catch (Exception)
+			{
+				throw;
+			}
 		}
         #endregion
 

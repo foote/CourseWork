@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BDF.CourseWork.BL.Models\BDF.CourseWork.BL.Models.csproj" />
+    <ProjectReference Include="..\BDF.CourseWork.BL\BDF.CourseWork.BL.csproj" />
+  </ItemGroup>
+
+</Project>

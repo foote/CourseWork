@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BDF.CourseWork.BL", "BDF.Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BDF.CourseWork.BL.Models", "BDF.CourseWork.BL.Models\BDF.CourseWork.BL.Models.csproj", "{D2CBEF3B-7EDF-4A34-8F3D-8D4CCF0BE825}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BDF.CourseWork.ConsoleApp", "BDF.CourseWork.ConsoleApp\BDF.CourseWork.ConsoleApp.csproj", "{4B6BB21B-09D2-474C-9EF5-55009F98DA4B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{D2CBEF3B-7EDF-4A34-8F3D-8D4CCF0BE825}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D2CBEF3B-7EDF-4A34-8F3D-8D4CCF0BE825}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D2CBEF3B-7EDF-4A34-8F3D-8D4CCF0BE825}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B6BB21B-09D2-474C-9EF5-55009F98DA4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B6BB21B-09D2-474C-9EF5-55009F98DA4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B6BB21B-09D2-474C-9EF5-55009F98DA4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B6BB21B-09D2-474C-9EF5-55009F98DA4B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

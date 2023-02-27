@@ -34,6 +34,13 @@
             lbxInfo = new ListBox();
             statusStrip1 = new StatusStrip();
             lblStatus = new ToolStripStatusLabel();
+            btnMakeCourse = new Button();
+            btnGetCourse = new Button();
+            btnMakeCourse2 = new Button();
+            btnCallMethods = new Button();
+            btnAssignSectionNo = new Button();
+            label2 = new Label();
+            txtSectionNo = new TextBox();
             statusStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -57,7 +64,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(212, 35);
+            label1.Location = new Point(213, 34);
             label1.Name = "label1";
             label1.Size = new Size(42, 15);
             label1.TabIndex = 2;
@@ -67,7 +74,7 @@
             // 
             lbxInfo.FormattingEnabled = true;
             lbxInfo.ItemHeight = 15;
-            lbxInfo.Location = new Point(432, 30);
+            lbxInfo.Location = new Point(464, 30);
             lbxInfo.Name = "lbxInfo";
             lbxInfo.Size = new Size(207, 349);
             lbxInfo.TabIndex = 3;
@@ -86,11 +93,84 @@
             lblStatus.Name = "lblStatus";
             lblStatus.Size = new Size(0, 17);
             // 
+            // btnMakeCourse
+            // 
+            btnMakeCourse.Location = new Point(29, 59);
+            btnMakeCourse.Name = "btnMakeCourse";
+            btnMakeCourse.Size = new Size(118, 23);
+            btnMakeCourse.TabIndex = 5;
+            btnMakeCourse.Text = "Make Course";
+            btnMakeCourse.UseVisualStyleBackColor = true;
+            btnMakeCourse.Click += btnMakeCourse_Click;
+            // 
+            // btnGetCourse
+            // 
+            btnGetCourse.Location = new Point(29, 88);
+            btnGetCourse.Name = "btnGetCourse";
+            btnGetCourse.Size = new Size(118, 23);
+            btnGetCourse.TabIndex = 6;
+            btnGetCourse.Text = "Get Course";
+            btnGetCourse.UseVisualStyleBackColor = true;
+            btnGetCourse.Click += btnGetCourse_Click;
+            // 
+            // btnMakeCourse2
+            // 
+            btnMakeCourse2.Location = new Point(29, 117);
+            btnMakeCourse2.Name = "btnMakeCourse2";
+            btnMakeCourse2.Size = new Size(118, 23);
+            btnMakeCourse2.TabIndex = 7;
+            btnMakeCourse2.Text = "Make Course";
+            btnMakeCourse2.UseVisualStyleBackColor = true;
+            btnMakeCourse2.Click += btnMakeCourse2_Click;
+            // 
+            // btnCallMethods
+            // 
+            btnCallMethods.Location = new Point(29, 146);
+            btnCallMethods.Name = "btnCallMethods";
+            btnCallMethods.Size = new Size(118, 23);
+            btnCallMethods.TabIndex = 8;
+            btnCallMethods.Text = "Call Methods";
+            btnCallMethods.UseVisualStyleBackColor = true;
+            btnCallMethods.Click += btnCallMethods_Click;
+            // 
+            // btnAssignSectionNo
+            // 
+            btnAssignSectionNo.Location = new Point(29, 175);
+            btnAssignSectionNo.Name = "btnAssignSectionNo";
+            btnAssignSectionNo.Size = new Size(118, 23);
+            btnAssignSectionNo.TabIndex = 9;
+            btnAssignSectionNo.Text = "Assign Section No";
+            btnAssignSectionNo.UseVisualStyleBackColor = true;
+            btnAssignSectionNo.Click += btnAssignSectionNo_Click;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(187, 67);
+            label2.Name = "label2";
+            label2.Size = new Size(68, 15);
+            label2.TabIndex = 11;
+            label2.Text = "Section No:";
+            // 
+            // txtSectionNo
+            // 
+            txtSectionNo.Location = new Point(261, 60);
+            txtSectionNo.Name = "txtSectionNo";
+            txtSectionNo.Size = new Size(138, 23);
+            txtSectionNo.TabIndex = 10;
+            // 
             // frmCourses
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(694, 435);
+            Controls.Add(label2);
+            Controls.Add(txtSectionNo);
+            Controls.Add(btnAssignSectionNo);
+            Controls.Add(btnCallMethods);
+            Controls.Add(btnMakeCourse2);
+            Controls.Add(btnGetCourse);
+            Controls.Add(btnMakeCourse);
             Controls.Add(statusStrip1);
             Controls.Add(lbxInfo);
             Controls.Add(label1);
@@ -113,5 +193,12 @@
         private ListBox lbxInfo;
         private StatusStrip statusStrip1;
         private ToolStripStatusLabel lblStatus;
+        private Button btnMakeCourse;
+        private Button btnGetCourse;
+        private Button btnMakeCourse2;
+        private Button btnCallMethods;
+        private Button btnAssignSectionNo;
+        private Label label2;
+        private TextBox txtSectionNo;
     }
 }
