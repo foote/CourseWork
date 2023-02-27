@@ -1,4 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using BDF.CourseWork.BL;
 using BDF.CourseWork.BL.Models;
 
 try
@@ -18,7 +19,9 @@ try
         course.Name = name;
 
         course.AssignSectionNumber(sectionNo);
-        Console.WriteLine("Course Name = " + course.Name); 
+        Console.WriteLine("Course Name = " + course.Name);
+
+        CourseManager.AddCourse(course);
     }
 }
 catch (Exception ex)

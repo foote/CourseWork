@@ -1,3 +1,4 @@
+using BDF.CourseWork.BL;
 using BDF.CourseWork.BL.Models;
 
 namespace BDF.CourseWork.UI
@@ -94,6 +95,8 @@ namespace BDF.CourseWork.UI
                 Course course = new Course();
                 course.Name = txtName.Text;
                 course.AssignSectionNumber(txtSectionNo.Text);
+                CourseManager.AddCourse(course);
+
             }
             catch (Exception ex)
             {

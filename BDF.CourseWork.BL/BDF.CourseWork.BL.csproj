@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\BDF.CourseWork.BL.Models\BDF.CourseWork.BL.Models.csproj" />
+  </ItemGroup>
+
 </Project>
