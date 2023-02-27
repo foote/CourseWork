@@ -8,4 +8,9 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\BDF.CourseWork.BL.Models\BDF.CourseWork.BL.Models.csproj" />
+    <ProjectReference Include="..\BDF.CourseWork.BL\BDF.CourseWork.BL.csproj" />
+  </ItemGroup>
+
 </Project>

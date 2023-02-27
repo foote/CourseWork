@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33414.496
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BDF.CourseWork.UI", "BDF.CourseWork.UI\BDF.CourseWork.UI.csproj", "{2870B304-4F46-44F9-85FB-5EF378819739}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BDF.CourseWork.UI", "BDF.CourseWork.UI\BDF.CourseWork.UI.csproj", "{2870B304-4F46-44F9-85FB-5EF378819739}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BDF.CourseWork.BL", "BDF.CourseWork.BL\BDF.CourseWork.BL.csproj", "{AF834099-F0DD-499E-B3C7-EE30EC14EC09}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BDF.CourseWork.BL", "BDF.CourseWork.BL\BDF.CourseWork.BL.csproj", "{AF834099-F0DD-499E-B3C7-EE30EC14EC09}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BDF.CourseWork.BL.Models", "BDF.CourseWork.BL.Models\BDF.CourseWork.BL.Models.csproj", "{D2CBEF3B-7EDF-4A34-8F3D-8D4CCF0BE825}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{AF834099-F0DD-499E-B3C7-EE30EC14EC09}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AF834099-F0DD-499E-B3C7-EE30EC14EC09}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AF834099-F0DD-499E-B3C7-EE30EC14EC09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2CBEF3B-7EDF-4A34-8F3D-8D4CCF0BE825}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2CBEF3B-7EDF-4A34-8F3D-8D4CCF0BE825}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2CBEF3B-7EDF-4A34-8F3D-8D4CCF0BE825}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2CBEF3B-7EDF-4A34-8F3D-8D4CCF0BE825}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
