@@ -41,6 +41,10 @@
             btnAssignSectionNo = new Button();
             label2 = new Label();
             txtSectionNo = new TextBox();
+            btnAddCourseToList = new Button();
+            btnAddStringToList = new Button();
+            btnRemoveFromList = new Button();
+            btnRemoveAllNames = new Button();
             statusStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -159,11 +163,55 @@
             txtSectionNo.Size = new Size(138, 23);
             txtSectionNo.TabIndex = 10;
             // 
+            // btnAddCourseToList
+            // 
+            btnAddCourseToList.Location = new Point(29, 289);
+            btnAddCourseToList.Name = "btnAddCourseToList";
+            btnAddCourseToList.Size = new Size(118, 23);
+            btnAddCourseToList.TabIndex = 12;
+            btnAddCourseToList.Text = "Add Course To List";
+            btnAddCourseToList.UseVisualStyleBackColor = true;
+            btnAddCourseToList.Click += btnAddCourseToList_Click;
+            // 
+            // btnAddStringToList
+            // 
+            btnAddStringToList.Location = new Point(29, 203);
+            btnAddStringToList.Name = "btnAddStringToList";
+            btnAddStringToList.Size = new Size(118, 23);
+            btnAddStringToList.TabIndex = 13;
+            btnAddStringToList.Text = "Add String To List";
+            btnAddStringToList.UseVisualStyleBackColor = true;
+            btnAddStringToList.Click += btnAddStringToList_Click;
+            // 
+            // btnRemoveFromList
+            // 
+            btnRemoveFromList.Location = new Point(29, 232);
+            btnRemoveFromList.Name = "btnRemoveFromList";
+            btnRemoveFromList.Size = new Size(118, 23);
+            btnRemoveFromList.TabIndex = 14;
+            btnRemoveFromList.Text = "Remove From List";
+            btnRemoveFromList.UseVisualStyleBackColor = true;
+            btnRemoveFromList.Click += btnRemoveFromList_Click;
+            // 
+            // btnRemoveAllNames
+            // 
+            btnRemoveAllNames.Location = new Point(29, 260);
+            btnRemoveAllNames.Name = "btnRemoveAllNames";
+            btnRemoveAllNames.Size = new Size(118, 23);
+            btnRemoveAllNames.TabIndex = 15;
+            btnRemoveAllNames.Text = "Remove All Names";
+            btnRemoveAllNames.UseVisualStyleBackColor = true;
+            btnRemoveAllNames.Click += btnRemoveAllNames_Click;
+            // 
             // frmCourses
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(694, 435);
+            Controls.Add(btnRemoveAllNames);
+            Controls.Add(btnRemoveFromList);
+            Controls.Add(btnAddStringToList);
+            Controls.Add(btnAddCourseToList);
             Controls.Add(label2);
             Controls.Add(txtSectionNo);
             Controls.Add(btnAssignSectionNo);
@@ -179,6 +227,7 @@
             Name = "frmCourses";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Course Work";
+            Load += frmCourses_Load;
             statusStrip1.ResumeLayout(false);
             statusStrip1.PerformLayout();
             ResumeLayout(false);
@@ -200,5 +249,9 @@
         private Button btnAssignSectionNo;
         private Label label2;
         private TextBox txtSectionNo;
+        private Button btnAddCourseToList;
+        private Button btnAddStringToList;
+        private Button btnRemoveFromList;
+        private Button btnRemoveAllNames;
     }
 }

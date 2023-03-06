@@ -6,6 +6,7 @@ namespace BDF.CourseWork.UI
     public partial class frmCourses : Form
     {
         Course course3;
+        List<string> names;
 
         public frmCourses()
         {
@@ -61,6 +62,17 @@ namespace BDF.CourseWork.UI
             }
         }
 
+        private void DisplayInfo(List<string> info)
+        {
+
+            if (info != null)
+            {
+                // Bind the names to the listbox
+                lbxInfo.DataSource = null;
+                lbxInfo.DataSource = info;
+            }
+        }
+
         private void btnMakeCourse2_Click(object sender, EventArgs e)
         {
             Course course4 = new Course()
@@ -103,6 +115,85 @@ namespace BDF.CourseWork.UI
                 lblStatus.Text = "Error: " + ex.Message;
             }
 
+        }
+
+        private void btnAddCourseToList_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                lblStatus.ForeColor = Color.Black;
+
+
+
+
+            }
+            catch (Exception ex)
+            {
+                lblStatus.Text = ex.Message;
+                lblStatus.ForeColor = Color.Red;
+            }
+        }
+
+        private void btnAddStringToList_Click(object sender, EventArgs e)
+        {
+
+            try
+            {
+                lblStatus.ForeColor = Color.Black;
+
+                // Add the typeid name to the list
+                string name = txtName.Text;
+
+                names.Add(name);
+
+                DisplayInfo(names);
+            }
+            catch (Exception ex)
+            {
+                lblStatus.Text = ex.Message;
+                lblStatus.ForeColor = Color.Red;
+            }
+        }
+
+        private void frmCourses_Load(object sender, EventArgs e)
+        {
+            // Instantiate the List of names
+            names = new List<string>();
+
+        }
+
+        private void btnRemoveFromList_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                lblStatus.ForeColor = Color.Black;
+                names.Remove(txtName.Text);
+                DisplayInfo(names);
+            }
+            catch (Exception ex)
+            {
+                lblStatus.Text = ex.Message;
+                lblStatus.ForeColor = Color.Red;
+            }
+        }
+
+        private void btnRemoveAllNames_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                lblStatus.ForeColor = Color.Black;
+
+                //names.RemoveAll(n => n.Contains(txtName.Text));
+
+                names.Clear();
+                
+                DisplayInfo(names);
+            }
+            catch (Exception ex)
+            {
+                lblStatus.Text = ex.Message;
+                lblStatus.ForeColor = Color.Red;
+            }
         }
     }
 }
