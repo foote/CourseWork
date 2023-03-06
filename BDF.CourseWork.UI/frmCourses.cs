@@ -6,7 +6,8 @@ namespace BDF.CourseWork.UI
     public partial class frmCourses : Form
     {
         Course course3;
-        List<string> names;
+        private List<string> names;
+        private List<Course> courses;
 
         public frmCourses()
         {
@@ -123,14 +124,44 @@ namespace BDF.CourseWork.UI
             {
                 lblStatus.ForeColor = Color.Black;
 
+                // Set the property values
+                Course course = new Course();
+                course.Name = txtName.Text;
+                course.SectionNo = txtSectionNo.Text;
 
+                // Add to the list
+                if(courses == null)
+                    courses = new List<Course>();
 
+                course.Id = 1;
+                if(courses.Any())
+                    course.Id = courses.Max(x => x.Id) + 1;
+
+                courses.Add(course);
+
+                // DisplayInfo
+                DisplayInfo(courses);
 
             }
             catch (Exception ex)
             {
                 lblStatus.Text = ex.Message;
                 lblStatus.ForeColor = Color.Red;
+            }
+        }
+
+        private void DisplayInfo(List<Course> courses)
+        {
+            if(courses != null)
+            {
+                lbxInfo.DataSource = null;
+                lbxInfo.DataSource = courses;
+
+                // Tell the binding what property show
+                lbxInfo.DisplayMember = "Description";
+
+                // Tell the binding what the primary key is.
+                lbxInfo.ValueMember = "Id";
             }
         }
 

@@ -66,11 +66,31 @@ namespace BDF.CourseWork.BL.Models
 			set { hoursPerSession = value; }
 		}
 
+		private string sectionNo;
+
+		public string SectionNo
+		{
+			get { return sectionNo; }
+			set { sectionNo = value; }
+		}
+
+
+		// Calculate property
+		public string Description
+		{
+			get { return name + " (" + sectionNo + ")"; }
+		}
+
+        public override string ToString()
+        {
+            return id.ToString() + ") " + name + " (" + sectionNo + ")";
+        }
+
         #endregion
 
         #region "Methods"
 
-		public void Run()
+        public void Run()
 		{
 
 		}
